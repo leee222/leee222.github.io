@@ -10,20 +10,13 @@
 
     <title>Grace E. Lee</title>
 
-    <!-- Bootstrap core CSS -->
-    <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
 
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <!-- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet"> -->
 
     <!-- Custom styles for this template -->
 	<style>
-
-
 	img {
     display: block;
  	 	border-radius: 50%;
@@ -32,15 +25,8 @@
       width: 100%;
       height: auto;
 	}
-
 	body{font-family:'Open Sans',serif;padding-top:54px;color:#868e96}
-	@media (min-width:992px){body{padding-top:0;padding-left:17rem}}
-  @media (min-width:992px){
-    #sideNav .navbar-nav .nav-item .nav-link{display: block;margin: auto;}
-    #sideNav .email-click{
-      display: block;margin: auto;
-    }
-  }
+	@media (min-width:420px){body{padding-top:0;padding-left:17rem}}
 	h1,h3,h4,h5{font-family:'Lato',serif;font-weight:700;color:#343a40}
 	h2,h6{font-family:'Lato',serif;font-weight:700;color:#824027}
 	h3.mb-2{color:#824027}
@@ -53,13 +39,22 @@
 	.list-social-icons a .fa-lg{font-size:1.75rem}
 	.list-icons{font-size:3rem}
 	.list-icons .list-inline-item i:hover{color:#bd5d38}
-	#sideNav 
-	.navbar-nav .nav-item .nav-link{font-weight:600;text-transform:uppercase;text-align:center}
-	@media (min-width:992px){#sideNav{text-align:center;position:fixed;top:0;left:0;display:flex;flex-direction:column;width:17rem;height:100vh}
+	#sideNav .email-click{text-align:center;display:flex;flex-direction: column;}
+
+  
+
+  #sideNav 
+	.navbar-nav .nav-item .nav-link{font-weight:600;text-transform:uppercase;text-align:center;display:flex;flex-direction: column;}
+
+  #sideNav .navbar-collapse{display:flex;align-items:flex-start;flex-grow:0;width:100%;margin-bottom:auto}
+  #sideNav .navbar-collapse .navbar-nav{flex-direction:column;width:75%;list-style:none;}
+  /*#sideNav .navbar-collapse .navbar-nav .nav-item{display:block}*/
+	
+  @media (min-width:420px){#sideNav{text-align:center;position:fixed;top:0;left:0;display:flex;flex-direction:column;width:17rem;height:100vh}
 	#sideNav .navbar-brand{display:flex;margin:auto auto 0;padding:.5rem}
 	#sideNav .navbar-brand .img-profile{max-width:10rem;max-height:10rem;border:.5rem solid rgba(255,255,255,.2)}
 	#sideNav .navbar-collapse{display:flex;align-items:flex-start;flex-grow:0;width:100%;margin-bottom:auto}
-	#sideNav .navbar-collapse .navbar-nav{flex-direction:column;width:70%}
+	#sideNav .navbar-collapse .navbar-nav{flex-direction:column;width:70%;list-style: none;}
 	#sideNav .navbar-collapse .navbar-nav .nav-item{display:block}
 	#sideNav .navbar-collapse .navbar-nav .nav-item .nav-link{display:block}
 	}
@@ -93,7 +88,6 @@
       </a>
       <br>
       <span class="email-click" style="cursor: pointer" onclick="this.textContent = ('leee0020' + '@e' + String.fromCharCode(46) + 'ntu' + String.fromCharCode(46) + 'edu' + String.fromCharCode(46) + 'sg'); this.onclick = null; this.style.cursor='default'">Email: click to reveal</span>
- 		  <!-- <a class="mb-2">leee0020@e.ntu.edu.sg</a> -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -108,7 +102,7 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="https://www.researchgate.net/profile/Grace_Lee107" target="_blank">ResearchGate</a>
           </li>
-		    </li>
+		    <!-- </li> -->
         </ul>
       </div>
       <br>
@@ -154,7 +148,7 @@
             </div>
           </div>
           <div class="resume-date text-md-right">
-			<br>
+			    <br>
           </div>
 
 		<div class="resume-item d-flex flex-column flex-md-row mb-5">
@@ -170,7 +164,7 @@
 		  <div class="resume-date text-md-right">
 			<br>
           </div>
-		<div class="resume-item d-flex flex-column flex-md-row mb-5">
+		  <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Incorporating Distinct Opinions in Content Recommender System</h3>
               <div class="subheading mb-3">Grace E. Lee, Keejun Han, Mun Y. Yi</div>
@@ -221,7 +215,7 @@
               <h3 class="mb-0">Algorithms, SCSE, NTU</h3>
               <div>AY 2018/2019 S1 Lab supervisor</div>
               <div class="resume-date text-md-right">
-			  <br>
+			       <br>
               </div>
           	</div>
 
@@ -231,7 +225,7 @@
               <div>AY 2017/2018 S1, S2 Lab supervisor</div>
               <div>AY 2018/2019 S1 Lab supervisor</div>
               <div class="resume-date text-md-right">
-			  <br>
+			        <br>
               </div>
             </div>
           
@@ -246,21 +240,18 @@
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Student Travel Grant ACM SIGIR 2018</h3>
-              <!-- <div>Student Travel Grant ACM SIGIR 2018</div> -->
             </div>
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
             	<h3 class="mb-0">Student Travel Grant AIRS 2015</h3>
-              <!-- <div>Student Travel Grant AIRS 2015</div> -->
             </div>
           </div>
           
 		  <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
             	<h3 class="mb-0">South Korean Government scholarship for M.S. students</h3>
-              <!-- <div>Student Travel Grant AIRS 2015</div> -->
             </div>
           </div>
 
@@ -268,21 +259,18 @@
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
             	<h3 class="mb-0">1<sup>st</sup> Prize in 2012 Summer Internship, Samsung Electronics</h3>
-              <!-- <div>1<sup>st</sup> prize in the 2012 Summer Internship Team Project, Samsung Electronics Co., Ltd</div> -->
             </div>
           </div>
           
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
             	<h3 class="mb-0">Doosan Scholarship, Doosan Yonkang Foundation</h3>
-              <!-- <div>Doosan Scholarship, Doosan Yonkang Foundation</div> -->
             </div>
           </div>
                 
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
             	<h3 class="mb-0">National Undergraduate Science & Technology Scholarship (Korea)</h3>
-              <!-- <div>National Undergraduate S&T Scholarship</div> -->
             </div>
           </div>                    
         </div>
@@ -292,22 +280,6 @@
 	<a class=mb-3 href="https://github.com/BlackrockDigital/startbootstrap-resume" target="_blank">website template</a></h5>
     </div>
     </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
-    <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
-
-    <!-- Plugin JavaScript -->
-    <!-- <script src="vendor/jquery-easing/jquery.easing.min.js"></script> -->
-
-    <!-- Custom scripts for this template -->
-    <!-- <script src="js/resume.min.js"></script> -->
-
-
-<!--     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.js"></script>  -->
-
-<!--     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> -->
-
 
   </body>
 
