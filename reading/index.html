@@ -16,156 +16,445 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <style>
-    img {
+	<style>
+	img {
     display: block;
-        border-radius: 50%;
-        margin-left: auto;
-        margin-right: auto;
+ 	 	border-radius: 50%;
+  		margin-left: auto;
+    	margin-right: auto;
       width: 100%;
       height: auto;
-    }
-    body{font-family:'Open Sans',serif;padding-top:54px;color:#868e96}
-    @media (min-width:420px){body{padding-top:0;padding-left:17rem}}
-    h1,h3,h4,h5{font-family:'Lato',serif;font-weight:700;color:#343a40}
-    h2,h6{font-family:'Lato',serif;font-weight:700;color:#824027}
-    h3.mb-2{color:#824027}
-    h5.mb-3{color:#dadddf}
-    h1{font-size:6rem;line-height:5.5rem}
-    h2{font-size:3.5rem}
-    .subheading{font-weight:normal;font-family:'Lato',serif;font-size:1.13rem}
-    .list-social-icons a{color:#495057}
-    .list-social-icons a:hover{color:#bd5d38}
-    .list-social-icons a .fa-lg{font-size:1.75rem}
-    .list-icons{font-size:3rem}
-    .list-icons .list-inline-item i:hover{color:#bd5d38}
-    #sideNav .email-click{text-align:center;display:flex;flex-direction: column;}
+	}
+	body{font-family:'Open Sans',serif;padding-top:54px;color:#868e96}
+	@media (min-width:420px){body{padding-top:0;padding-left:17rem}}
+	h1,h3,h4,h5{font-family:'Lato',serif;font-weight:700;color:#343a40}
+	h2,h6{font-family:'Lato',serif;font-weight:700;color:#824027}
+	h3.mb-2{color:#824027}
+	h5.mb-3{color:#dadddf}
+	h1{font-size:6rem;line-height:5.5rem}
+	h2{font-size:3.5rem}
+	.subheading{font-weight:normal;font-family:'Lato',serif;font-size:1.13rem}
+	.list-social-icons a{color:#495057}
+	.list-social-icons a:hover{color:#bd5d38}
+	.list-social-icons a .fa-lg{font-size:1.75rem}
+	.list-icons{font-size:3rem}
+	.list-icons .list-inline-item i:hover{color:#bd5d38}
+	#sideNav .email-click{text-align:center;display:flex;flex-direction: column;}
 
-  
 
-  #sideNav 
-    .navbar-nav .nav-item .nav-link{font-weight:600;text-transform:uppercase;text-align:center;display:flex;flex-direction: column;}
+
+  #sideNav
+	.navbar-nav .nav-item .nav-link{font-weight:600;text-transform:uppercase;text-align:center;display:flex;flex-direction: column;}
 
   #sideNav .navbar-collapse{display:flex;align-items:flex-start;flex-grow:0;width:100%;margin-bottom:auto}
   #sideNav .navbar-collapse .navbar-nav{flex-direction:column;width:75%;list-style:none;}
   /*#sideNav .navbar-collapse .navbar-nav .nav-item{display:block}*/
-    
+
   @media (min-width:420px){#sideNav{text-align:center;position:fixed;top:0;left:0;display:flex;flex-direction:column;width:17rem;height:100vh}
-    #sideNav .navbar-brand{display:flex;margin:auto auto 0;padding:.5rem}
-    #sideNav .navbar-brand .img-profile{max-width:10rem;max-height:10rem;border:.5rem solid rgba(255,255,255,.2)}
-    #sideNav .navbar-collapse{display:flex;align-items:flex-start;flex-grow:0;width:100%;margin-bottom:auto}
-    #sideNav .navbar-collapse .navbar-nav{flex-direction:column;width:70%;list-style: none;}
-    #sideNav .navbar-collapse .navbar-nav .nav-item{display:block}
-    #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link{display:block}
-    }
-    section.resume-section{margin-left: 30px;margin-right: 40px;border-bottom:1px solid #dee2e6;padding-top:5rem!important;padding-bottom:5rem!important}
-    section.resume-section .resume-item .resume-date{min-width:none}@media (min-width:768px)
-    {section.resume-section{min-height:33vh}
-    section.resume-section .resume-item .resume-date{min-width:18rem}}@media (min-width:992px)
-    {section.resume-section{padding-top:3rem!important;padding-bottom:3rem!important}}
-    .bg-primary{background-color:#dee2e6!important}
-    .text-primary{color:#868e96!important}
-    a{color:#868e96}
-    a.mb-2{color:#824027}
-    a.mb-3{color:#dadddf}
-    a:active,
-    a:focus,
-    a:hover{color:#824027}
-    .lastsec{text-align:center}
-    </style>
+	#sideNav .navbar-brand{display:flex;margin:auto auto 0;padding:.5rem}
+	#sideNav .navbar-brand .img-profile{max-width:10rem;max-height:10rem;border:.5rem solid rgba(255,255,255,.2)}
+	#sideNav .navbar-collapse{display:flex;align-items:flex-start;flex-grow:0;width:100%;margin-bottom:auto}
+	#sideNav .navbar-collapse .navbar-nav{flex-direction:column;width:70%;list-style: none;}
+	#sideNav .navbar-collapse .navbar-nav .nav-item{display:block}
+	#sideNav .navbar-collapse .navbar-nav .nav-item .nav-link{display:block}
+	}
+	section.resume-section{margin-left: 30px;margin-right: 40px;border-bottom:1px solid #dee2e6;padding-top:5rem!important;padding-bottom:5rem!important}
+	section.resume-section .resume-item .resume-date{min-width:none}@media (min-width:768px)
+/* 	{section.resume-section{min-height:33vh} */
+	section.resume-section .resume-item .resume-date{min-width:18rem}}@media (min-width:992px)
+	{section.resume-section{padding-top:3rem!important;padding-bottom:3rem!important}}
+	.bg-primary{background-color:#dee2e6!important}
+	.text-primary{color:#868e96!important}
+	a{color:#868e96}
+	a.mb-2{color:#824027}
+	a.mb-3{color:#dadddf}
+	a:active,
+	a:focus,
+	a:hover{color:#824027}
+	.lastsec{text-align:center}
+	</style>
 
-<!--     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 
-    </head>
+	</head>
 
-  
-    <body id="page-top">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-          <a class="navbar-brand js-scroll-trigger" href="#page-top">
-              <span class="d-none d-lg-block">
-                  <br>
-                  <img src="../personal_site_profile_picture.jpg">
-              </span>
-          </a>
-          <br>
-          <span class="email-click" style="cursor: pointer" onclick="this.textContent = ('leee0020' + '@e' + String.fromCharCode(46) + 'ntu' + String.fromCharCode(46) + 'edu' + String.fromCharCode(46) + 'sg'); this.onclick = null; this.style.cursor='default'">Email: click to reveal</span>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav">
-                  <li class="nav-item">
-                      <a class="nav-link js-scroll-trigger" href="https://www.researchgate.net/profile/Grace_Lee107" target="_blank">ResearchGate</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link js-scroll-trigger" href="https://scholar.google.com.sg/citations?user=RqasG7gAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link js-scroll-trigger" href="https://twitter.com/gracelee0020" target="_blank">Twitter</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link js-scroll-trigger" href="http://dblp.uni-trier.de/pers/hd/l/Lee:Grace_E=" target="_blank">DBLP</a>
-                  </li>
-              </ul>
-          </div>
-          <br>
-      </nav>
-      
-      <div class="container-fluid p-0">
 
-                
-          <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="services">
-          <div class="my-auto">
+	<body id="page-top">
+	  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+		  <a class="navbar-brand js-scroll-trigger" href="#page-top">
+			  <span class="d-none d-lg-block">
+				  <br>
+				  <img src="personal_site_profile_picture.jpg">
+			  </span>
+		  </a>
+		  <br>
+		  <span class="email-click" style="cursor: pointer" onclick="this.textContent = ('grace.lee2' + '@thomsonreuters.com' + String.fromCharCode(46) + 'com'); this.onclick = null; this.style.cursor='default'">Email: click to reveal</span>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav">
+				  <li class="nav-item">
+					  <a class="nav-link js-scroll-trigger" href="https://scholar.google.com.sg/citations?user=RqasG7gAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar</a>
+				  </li>
+				  <li class="nav-item">
+					  <a class="nav-link js-scroll-trigger" href="https://www.researchgate.net/profile/Grace_Lee107" target="_blank">ResearchGate</a>
+				  </li>
+				  <li class="nav-item">
+					  <a class="nav-link js-scroll-trigger" href="http://dblp.uni-trier.de/pers/hd/l/Lee:Grace_E=" target="_blank">DBLP</a>
+				  </li>
+				  <li class="nav-item">
+					  <a class="nav-link js-scroll-trigger" href="https://www.linkedin.com/in/grace-lee-21b86479/" target="_blank">LinkedIn</a>
+				  </li>
+				  <li class="nav-item">
+					  <a class="nav-link js-scroll-trigger" href="https://twitter.com/gracelee0020" target="_blank">Twitter</a>
+				  </li>
+			  </ul>
+		  </div>
+		  <br>
+	  </nav>
 
-            <div class="resume-item d-flex flex-column flex-md-row">
-              <div class="resume-content mr-auto">
-                  <h3 class="mb-0">2 0 1 9</h3>
-                  <ul id="2019">
-                        <li><a href="" style="text-decoration: none" target="_blank">Open Information Extraction from Question-Answer Pairs</a> NAACL 2019 Bhutani et al.</li>    
-                        <li><a href="" style="text-decoration: none" target="_blank">Zero-shot Word Sense Disambiguation using Sense Definition Embeddings</a> ACL 2019 Kumar et al.</li>    
-                        <li><a href="" style="text-decoration: none" target="_blank">Outline Generation: Understanding the Inherent Content Structure of Documents</a> SIGIR 2019 Zhang et al.</li>
-                        <li><a href="" style="text-decoration: none" target="_blank">How to Compare Summarizers without Target Length? Pitfall, Solutions and Re-Examination of the Neural Summarization Literature</a> NAACL 2019 workshop Sun et al.</li>
-                        <li><a href="" style="text-decoration: none" target="_blank">Annotation Artifacts in Natural Language Inference Data</a> NAACL 2018 Gururangan et al.</li>
-                  </ul>
-              </div>
-              
-              <div class="resume-content mr-auto">
-                  <h3 class="mb-0">2 0 1 8</h3>
-                  <ul id="2018">
-                        <li><a href="" style="text-decoration: none" target="_blank">Dynamic Meta-Embeddings for Improved Sentence Representations</a> EMNLP 2018 Kiela et al.</li>
-                        <li><a href="" style="text-decoration: none" target="_blank">Learning to Ask Good Questions: Ranking Clarification Questions using Neural Expected Value of Perfect Information</a> ACL 2018 Rao et al.</li>
-                        <li><a href="" style="text-decoration: none" target="_blank">A Deep Relevance Matching Model for Ad-hoc Retrieval</a> CIKM 2016 Guo et al.</li>
-                        <li><a href="" style="text-decoration: none" target="_blank">Word-Entity Duet Representations for Document Ranking</a> SIGIR 2017 Xiong et al.</li>
-                  </ul>
-              </div>
+	  <div class="container-fluid p-0">
 
-              <div class="resume-content mr-auto">
-                  <h3 class="mb-0">2 0 1 7</h3>
-                  <ul id="2017">
-                        <li><a href="" style="text-decoration: none" target="_blank">Open Information Extraction from Question-Answer Pairs</a> NAACL 2019 Bhutani et al.</li>    
-                        <li><a href="" style="text-decoration: none" target="_blank">Comparative Document Analysis for Large Text Corpus</a> WSDM 2017 Ren et al.</li>    
-                        <li><a href="" style="text-decoration: none" target="_blank">Phrase-based Presentation Slides Generation for Academic Papers</a> AAAI 2017 Wang et al.</li>
-                        <li><a href="" style="text-decoration: none" target="_blank">Neural Ranking Models with Weak Supervision</a> SIGIR 2017 Dehghani et al.</li>
-                        <li><a href="" style="text-decoration: none" target="_blank">Anticipating Information Needs Based on Check-in Activity</a> WSDM 2017 Benetka et al.</li>
-                  </ul>
-              </div>
+		  <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+			  <div class="my-auto">
+				  <h2 class="mb-3">GRACE E. LEE</h2>
+				  <div class="subheading mb-5"></div>
+				  <p class="mb-5">Welcome to my website!
+				  <br><br>I am an Applied Research Scientist at Thomson Reuters, London UK.
+					  I obtained my PhD in School of Computer Science and Engineering (SCSE), Nanyang Technological University (NTU), Singapore, advised by <a href="https://scholar.google.com/citations?user=wyKGVKUAAAAJ&hl=en" style="text-decoration: underline" target="_blank">Prof Aixin Sun</a>.
+					  Before my PhD, I received B.S. and M.S. (advisor: <a href="https://scholar.google.com/citations?user=C8QGzCoAAAAJ&hl=en" style="text-decoration: underline" target="_blank">Prof Mun Y Yi</a>) in KAIST, South Korea, in 2014 and 2016, respectively.
+				  <br><br>
+					  My research interests are information extraction, information retrieval, and domain-specific NLP. I strongly advocate data-centric approaches for sustainable and robust ML development. At the moment, I am working on developing and deploying a labeling prioritization tool for iterative model improvement.
+			          <p class="mb-5"><b>NEWS</b>
+				  <br>
+			          <ul>
+					  <li>[July 2022] I will be serving WSDM 2023 as a PC member.</li>
+					  <li>[May 2022] The work done with my colleagues is accepted and presented in NAACL 2022 DeepLo workshop.</li>
+					  <li>[April 2022] I joined Thomson Reuters Labs (TR Labs) in London as applied research scientist. Exciting work to come!</li>
+<!-- 					  <li>[Feb 2021] I successfully (and virtually) defensed my PhD Viva!</li> -->
+<!-- 					  <li>[Dec 2020] I will be serving IJCAI 2021 as a PC member.</li> -->
+<!-- 					  <li>[Aug 2020] Understanding the Stability of Medical Concept Embeddings</i> is accepted in JASIST.</li> -->
+<!-- 				          <li>[June 2020] I have submitted my PhD thesis, titled <i>Seed-driven Document Ranking for Systematic Reviews in Evidence-based Medicine</i>.</li> -->
+<!-- 					  <li>[April 2020] I will be joining Amazon as Applied Scientist in Cambridge, UK this September.</li> -->
+				  </ul>
+				  </p>
+			  </div>
+		  </section>
 
-              
-              <div class="resume-content mr-auto">
-                  <h3 class="mb-0">2 0 1 6</h3>
-                  <ul id="2016">
-                        <li><a href="" style="text-decoration: none" target="_blank">Vandalism Detection in Wikidata</a> CIKM 2016 Heindorf et al.</li>    
-                        <li><a href="" style="text-decoration: none" target="_blank">Medical Question Answering for Clinical Decision Support</a> CIKM2016 Goodwin et al.</li>    
-                  </ul>
-              </div>
+		  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="publications">
+			  <div class="my-auto">
+				  <h3 class="mb-2"><u>PUBLICATIONS</u></h3>
+				  <br>
+				  <div class="resume-item d-flex flex-column flex-md-row mb-5">
+					  <div class="resume-content mr-auto">
+						  <h3 class="mb-0">Improving Distantly Supervised Document-Level Relation Extraction Through Natural Language Inference</h3>
+						  <div class="subheading mb-3">Clara Vania, <u>Grace E. Lee</u>, and Andrea Pierleoni</div>
+						  <p>NAACL 2022 DeepLo workshop</p>
+					  </div>
+ 					  <div class="resume-date text-md-right">
+						  <span class="text-primary"><a href="https://aclanthology.org/2022.deeplo-1.2.pdf" target="_blank">[Link]</a>
+					  </div>
+				  </div>
+				  <br>
+				  <div class="resume-item d-flex flex-column flex-md-row mb-5">
+					  <div class="resume-content mr-auto">
+						  <h3 class="mb-0">Understanding the Stability of Medical Concept Embeddings</h3>
+						  <div class="subheading mb-3"><u>Grace E. Lee</u> and Aixin Sun</div>
+						  <p>JASIST accepted in 2020</p>
+					  </div>
+ 					  <div class="resume-date text-md-right">
+						  <span class="text-primary"><a href="https://drive.google.com/file/d/1-uX1cJz1wD5mC7rM3xbF8jJ74puCJI3R/view?usp=sharing" target="_blank">[PDF]</a>
+					  </div>
+				  </div>
+				  <div class="resume-date text-md-right">
+				  <br>
+				  </div>
 
-              <div class="resume-date text-md-right">
-                <br>
-              </div>
-              
-            </div>				  
-          </div>
-        </section>        
-        
-      </div>
-      
-    </body>
-    
+				  <div class="resume-item d-flex flex-column flex-md-row mb-5">
+					  <div class="resume-content mr-auto">
+						  <h3 class="mb-0">A Study on Agreement in PICO Span Annotations</h3>
+						  <div class="subheading mb-3"><u>Grace E. Lee</u> and Aixin Sun</div>
+						  <p>SIGIR 2019, short paper, acceptance rate: 24.4% (108/443)</p>
+					  </div>
+ 					  <div class="resume-date text-md-right">
+						  <span class="text-primary"><a href="https://drive.google.com/file/d/18MRBD9IIKLRbTr_K9hsEkTZ3AXH86Pzm/view?usp=sharing" target="_blank">[PDF]</a><a href="https://drive.google.com/file/d/17hp_hKB089oECLqJLxD5A5UI85I5cGmv/view?usp=sharing" target="_blank">[Poster]</a></span>
+					  </div>
+				  </div>
+				  <div class="resume-date text-md-right">
+				  <br>
+				  </div>
+
+
+				  <div class="resume-item d-flex flex-column flex-md-row mb-5">
+					  <div class="resume-content mr-auto">
+						  <h3 class="mb-0">Digital Education for Health Professions in the Field of Dermatology: A Systematic Review by Digital Health Education Collaboration</h3>
+						  <div class="subheading mb-3">Xiaomeng Xu, Pawel Przemyslaw Posadzki, <u>Grace E. Lee</u>, Josip Car, Helen Elizabeth Smith</div>
+						  <p>Acta Dermato-Venereologica 2018, Systematic review</p>
+					  </div>
+					  <div class="resume-date text-md-right">
+						  <span class="text-primary"><a href="https://drive.google.com/open?id=1NxArFaPqALsYxe01wanQicW6cK3IwR9q" target="_blank">[PDF]</a></span>
+					  </div>
+				  </div>
+				  <div class="resume-date text-md-right">
+					  <br>
+				  </div>
+
+
+				  <div class="resume-item d-flex flex-column flex-md-row mb-5">
+					  <div class="resume-content mr-auto">
+						  <h3 class="mb-0">Seed-driven Document Ranking for Systematic Reviews in Evidence-Based Medicine</h3>
+						  <div class="subheading mb-3"><u>Grace E. Lee</u> and Aixin Sun</div>
+						  <p>SIGIR 2018, full paper, acceptance rate: 21.0% (87/432)</p>
+					  </div>
+					  <div class="resume-date text-md-right">
+						  <span class="text-primary"><a href="https://drive.google.com/open?id=1GGHgNnDyfMxJFmVFAPahRetKQlJ1ueUU" target="_blank">[PDF]</a><a href="https://drive.google.com/open?id=16h2GxhFwqdTpbji1SDsRxhrysfHiqSv4" target="_blank">[Slides]</a></span>
+					  </div>
+				  </div>
+				  <div class="resume-date text-md-right">
+					  <br>
+				  </div>
+
+
+				  <div class="resume-item d-flex flex-column flex-md-row mb-5">
+					  <div class="resume-content mr-auto">
+						  <h3 class="mb-0">A Study of Convolutional Neural Networks for Clinical Document Classification in Systematic Reviews: SysReview at CLEF eHealth 2017</h3>
+						  <div class="subheading mb-3"><u>Grace Eunkyung Lee</u></div>
+						  <p>CLEF (Working Notes), 2017</p>
+					  </div>
+					  <div class="resume-date text-md-right">
+						  <span class="text-primary"><a href="https://drive.google.com/open?id=0B9R15C3XGhbVRWFnZVFGY1A2Mms" target="_blank">[PDF]</a></span>
+					  </div>
+				  </div>
+				  <div class="resume-date text-md-right">
+					  <br>
+				  </div>
+
+
+				  <div class="resume-item d-flex flex-column flex-md-row mb-5">
+					  <div class="resume-content mr-auto">
+						  <h3 class="mb-0">Introducing Experiential Knowledge Platform: A Smart Decision Supporter for Field Experts</h3>
+						  <div class="subheading mb-3">Keejun Han, <u>Eunkyung G. Lee</u>, Hyunwoo Je, Mun Y. Yi</div>
+						  <p>BigComp 2016, workshop paper</p>
+					  </div>
+					  <div class="resume-date text-md-right">
+						  <span class="text-primary"><a href="https://drive.google.com/open?id=0B9R15C3XGhbVTmc1RmZlU1d4bjg" target="_blank">[PDF]</a></span>
+					  </div>
+				  </div>
+				  <div class="resume-date text-md-right">
+					  <br>
+				  </div>
+
+
+
+				  <div class="resume-item d-flex flex-column flex-md-row mb-5">
+					  <div class="resume-content mr-auto">
+						  <h3 class="mb-0">Incorporating Distinct Opinions in Content Recommender System</h3>
+						  <div class="subheading mb-3"><u>Grace E. Lee</u>, Keejun Han, Mun Y. Yi</div>
+						  <p>AIRS 2015, full paper</p>
+					  </div>
+					  <div class="resume-date text-md-right">
+						  <span class="text-primary"><a href="https://drive.google.com/file/d/0B9R15C3XGhbVanZ5SXZKbnA3cDg/view?usp=sharing" target="_blank">[PDF]</a></span>
+					  </div>
+				  </div>
+			  </div>
+		  </section>
+
+
+<!-- 		  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="drafts">
+			  <div class="my-auto">
+				  <h3 class="mb-2"><u>WORKING DRAFTS</u></h3>
+				  <br>
+				  <div class="resume-item d-flex flex-column flex-md-row mb-5">
+					  <div class="resume-content mr-auto">
+						  <h3 class="mb-0">Estimating Ranking Performance of Systematic Reviews</h3>
+						  <h3 class="mb-0">Understanding the Stability of Medical Concept Embeddings</h3>
+					  </div>
+				  </div>
+			  </div>
+		  </section> -->
+
+
+		  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="teaching">
+			  <div class="my-auto">
+				  <h3 class="mb-2"><u>TEACHING</u></h3>
+				  <br>
+
+				  <div class="resume-item d-flex flex-column flex-md-row">
+					  <div class="resume-content mr-auto">
+						  <h3 class="mb-0">Object-oriented Design and Programming, SCSE, NTU</h3>
+						  <div>AY 2019/2020 S1, 2018/2019 S1, 2017/2018 S1 S2, 2016/2017 S2, Lab supervisor</div>
+						  <div class="resume-date text-md-right">
+							  <br>
+						  </div>
+					  </div>
+
+					  <div class="resume-content mr-auto">
+						  <h3 class="mb-0">Introduction to Data Science and Artificial Intelligence, SCSE, NTU</h3>
+						  <div>AY 2018/2019 S2 Lab supervisor</div>
+						  <div class="resume-date text-md-right">
+							  <br>
+						  </div>
+					  </div>
+
+					  <div class="resume-content mr-auto">
+						  <h3 class="mb-0">Algorithms, SCSE, NTU</h3>
+						  <div>AY 2018/2019 S1, S2 Lab supervisor</div>
+						  <div class="resume-date text-md-right">
+							  <br>
+						  </div>
+					  </div>
+				  </div>
+			  </div>
+		  </section>
+
+
+
+		  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+			  <div class="my-auto">
+				  <h3 class="mb-2"><u>AWARDS & SCHOLARSHIPS</u></h3>
+				  <br>
+
+				  <div class="resume-item d-flex flex-column flex-md-row">
+					  <div class="resume-content mr-auto">
+						  <h3 class="mb-0">Student travel grant ACM SIGIR 2019</h3>
+					  </div>
+				  </div>
+
+
+				  <div class="resume-item d-flex flex-column flex-md-row">
+					  <div class="resume-content mr-auto">
+						  <h3 class="mb-0">Student travel grant ACM SIGIR 2018</h3>
+					  </div>
+				  </div>
+
+
+				  <div class="resume-item d-flex flex-column flex-md-row">
+					  <div class="resume-content mr-auto">
+						  <h3 class="mb-0">Singapore international graduate award (SINGA)</h3>
+					  </div>
+				  </div>
+
+
+				  <div class="resume-item d-flex flex-column flex-md-row">
+					  <div class="resume-content mr-auto">
+						  <h3 class="mb-0">Student travel grant AIRS 2015</h3>
+					  </div>
+				  </div>
+
+
+				  <div class="resume-item d-flex flex-column flex-md-row">
+					  <div class="resume-content mr-auto">
+						  <h3 class="mb-0">National graduate science & technology scholarship</h3>
+					  </div>
+				  </div>
+
+
+
+				  <div class="resume-item d-flex flex-column flex-md-row">
+					  <div class="resume-content mr-auto">
+						  <h3 class="mb-0">1<sup>st</sup> prize in 2012 summer internship, Samsung Electronics</h3>
+					  </div>
+				  </div>
+
+
+				  <div class="resume-item d-flex flex-column flex-md-row">
+					  <div class="resume-content mr-auto">
+						  <h3 class="mb-0">Doosan yonkang foundation scholarship</h3>
+					  </div>
+				  </div>
+
+
+				  <div class="resume-item d-flex flex-column flex-md-row">
+					  <div class="resume-content mr-auto">
+						  <h3 class="mb-0">National undergraduate science & technology scholarship</h3>
+					  </div>
+				  </div>
+			  </div>
+		  </section>
+
+
+		  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="internship">
+			  <div class="my-auto">
+				  <h3 class="mb-2"><u>INTERNSHIPS</u></h3>
+				  <br>
+
+				  <div class="resume-item d-flex flex-column flex-md-row">
+					  <div class="resume-content mr-auto">
+						  <h3 class="mb-0">SingHealth Office for Insights & Analytics (OIA), Singapore</h3>
+						  <div>Research Associate, Jan 2019 to June 2020</div>
+					  </div>
+				  </div>
+
+				  <div class="resume-item d-flex flex-column flex-md-row">
+					  <div class="resume-content mr-auto">
+						  <h3 class="mb-0">InfraTec GmbH, Germany</h3>
+						  <div>Sales Engineer, 2013</div>
+					  </div>
+				  </div>
+
+				  <div class="resume-item d-flex flex-column flex-md-row">
+					  <div class="resume-content mr-auto">
+						  <h3 class="mb-0">Samsung Electronics, South Korea</h3>
+						  <div>Software Engineer, Summer 2012</div>
+					  </div>
+					  <div class="resume-date text-md-right">
+						  <br>
+					  </div>
+				  </div>
+			  </div>
+		  </section>
+
+		  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="services">
+			  <div class="my-auto">
+				  <h3 class="mb-2"><u>SERVICES</u></h3>
+				  <br>
+
+				  <div class="resume-item d-flex flex-column flex-md-row">
+					  <div class="resume-content mr-auto">
+						  <h3 class="mb-0">PC members</h3>
+						  <div>IJCAI 2021</div>
+					  </div>
+					  <div class="resume-content mr-auto">
+						  <h3 class="mb-0">External reviewer</h3>
+						  <div>WSDM 2020, WWW 2020, SIGIR 2020</div>
+						  <div>WSDM 2019, WWW 2019, SIGIR 2019, CIKM 2019 (subreviewer)</div>
+						  <div>AAAI 2018, SIGIR 2018, IJCAI 2018</div>
+						  <div>AAAI 2017, SIGIR 2017</div>
+					  </div>
+					  <div class="resume-date text-md-right">
+						  <br>
+					  </div>
+				  </div>
+			  </div>
+		  </section>
+
+		  <section class="resume-section" id="_PhD_Thesis">
+			  <div class="resume-content mr-auto">
+				  <h3 class="mb-0">PhD Thesis</h3>
+				  <div>Seed-driven Document Ranking for Systematic Reviews in Evidence-based Medicine <a href="https://drive.google.com/file/d/1bPGvJy_7LVp5yiABURKOeJdKMobDwycs/view?usp=sharing" style="text-decoration: underline" target="_blank">[slides]</a> <a href="" style="text-decoration: underline" target="_blank">[PDF to be added]</a></div>
+				  <div>Examiners: <a href="https://scholar.google.com/citations?user=HmqvvQkAAAAJ&hl=en" style="text-decoration: underline" target="_blank">Mark Sanderson</a>,
+					  <a href="https://scholar.google.com/citations?user=NJOnxh4AAAAJ" style="text-decoration: underline" target="_blank">Yiqun Liu</a>,
+					  <a href="https://scholar.google.com/citations?user=aNVcd3EAAAAJ&hl=en" style="text-decoration: underline" target="_blank">Min-Yen Kan</a>
+				  </div>
+			  </div>
+		  </section>
+
+
+<!--  		  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="slides"> -->
+<!--   			  <div class="my-auto"> -->
+<!-- 			  	  <div class="resume-item d-flex flex-column flex-md-row"> -->
+<!-- 					  <p class="mb-5">In our group, we have a weekly meeting that we take turns and present a paper. <br><br>Here are some of the papers I've chosen because they are interesting and worth a discussion.</p> -->
+<!-- 					  <div class="resume-content mr-auto"> -->
+<!-- 						  <div><a href="https://leee222.github.io/reading" target="_blank">Slides for Reading Group</a></div> -->
+<!-- 				          </div> -->
+<!-- 				  </div>				   -->
+<!--   			  </div> -->
+<!-- 		  </section>  -->
+
+
+		  <div class=lastsec>
+			  <h5 class=mb-3>Last update: Jan 2021;<a class=mb-3 href="https://github.com/BlackrockDigital/startbootstrap-resume" target="_blank">website template</a></h5>
+		  </div>
+	  </div>
+
+
+	</body>
+
 </html>
